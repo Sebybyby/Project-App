@@ -69,16 +69,10 @@ class Lane5000UI(QWidget,GroupePositions):
         self.combo_mode.setFixedWidth(130)
 
         # ---- BOUTON RETOUR ----
-        back_btn = QPushButton()
-        back_btn.setIcon(QIcon("back_icon.png"))
-        back_btn.setIconSize(QSize(28, 28))
-        back_btn.setFixedSize(36, 36)
-        back_btn.setStyleSheet("QPushButton { border: none; }")
-        back_btn.clicked.connect(lambda: switch_page_callback(2))
 
         rightHeader.addWidget(self.combo_card)
         rightHeader.addWidget(self.combo_mode)
-        rightHeader.addWidget(back_btn)
+
 
         header.addWidget(self.combo_group)
         header.addStretch()

@@ -46,6 +46,3 @@ class GroupePositions:
         }
     
 
-    
-        def groups(self):
-            print (self.groups_positions)

@@ -66,6 +66,12 @@ class CombinationUI(QWidget):
         btn_move.setStyleSheet(btn_lane.styleSheet())
         btn_move.clicked.connect(lambda: switch_page_callback(4))  # Page Move5000
 
+        btn_move = QPushButton("Move5000")
+        btn_move.setFixedSize(140, 140)
+        btn_move.setStyleSheet(btn_lane.styleSheet())
+        btn_move.clicked.connect(lambda: switch_page_callback(8))  # Page Move5000
+
+
         button_layout.addStretch()
         button_layout.addWidget(btn_lane)
         button_layout.addSpacing(40)
